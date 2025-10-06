@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> Documentação das aulas sobre html</title>
+    </head>
+    <body> 
+        <!-- PRINCIPAIS TAG´S PARA TEXTOS (tem abertura e fechamento)-->
+ <p><strong> Cabeçalho (headline) </strong><br>
+ <h1> Titulo mais importante obs: o ideal é ser usado apenas uma vez na página </h1>
+ <h2> Titulo de segunda maior importância </h2>
+ <h3> Titulo de terceira maior importância </h3>
+ <h4> Titulo de quarta maior importância </h4>
+ <h5> Titulo de quinta maior importância </h5>
+ <h6> Titulo de sexta maior importância </h6> </p>
+ <!-- a tag <p> é utilizada para iniciar parágrafos no meu html, ela tem abertura e fechamento-->
+    <p> Eu sou um parágrafo </p>
+<!-- a tag <br> é utilizada para fazer a quebra de linha -->
+ <br> 
+ <!-- a tag <strong> e a tag <b> deixa o meu texto em negrito, porém a strong tem peso semântico e as duas tem abertura e fechamento de tag -->
+    <strong> Oi, sou a tag strong e tenho peso semântico </strong><br>
+    <b> Oi, sou a tag b e não tenho peso semântico </b><br>
+ <!-- a tag <em> e a tag <i> deixamn meu texto em ênfase porém a <em> tem semântica e a tag <i> não, ambas tem abertura e fechamento de tag -->
+    <em> Oi, sou a tag em e tenho peso semântico </em><br>
+    <i> Oi, sou a tag i e não tenho peso semântico </i>
+    <!--Listas
+    - ol= Ordenadas
+    - ul= Não ordenadas
+    - li= Itens da lista -->
+    <h3>Lista não ordenada</h3>
+    <ul>
+        <li>Item um</li>
+        <li>Item dois</li>
+        <li>Item três</li>
+        </ul>
+    <h3>Lista ordenada</h3>
+    <ol>
+        <li>Item um</li>
+        <li>Item dois</li>
+        <li>Item três</li>
+    </ol>
+    <h3>Tag semântica</h3>
+    <p>É uma tag que descreve o significado do conteúdo, ajudando tanto os desenvolvedores quanto os navegadores a entenderem a função daquela parte da página. Elas ajudam no momento em que os servidoes leem o site, ou seja, você vai estar enfatizando para o google (exemplo) que aquele texto é muito importante</p>
+    <h3> Tag não semântica</h3>
+    <p>Não indica o significado do conteúdo, apenas serve para estruturar ou estilizar.</p>
+<!--Exemplos:
+Semânticas
+<strong>
+<header>
+<main>
+<article>
+Não Semânticas
+<i>
+<div>
+<span>
+ -->
+    <!--Para adicionar links usamos a tag <a> que tem abertura e fechamento. usamos <a href="http://www.linkquevcquer.com.br">titulo pro link</a> ela vem de "anchor"(âncora) e é usado para criar links clicáveis que leve uma pessoa a algum lugar. A diferença pra tag <link> é que essa serve para conectar um recurso ao meu html. e é usada na parde <head> porque é informação para o navegador-->
+       <h2><p>Para links clicáveis usamos a tag a</p></h2>
+    <a href="http://www.dior.com">clique aqui</a>
+<p><h2>Para links internos usamos a tag link</h2></p>
+<p><h5>Ele é usado para conectar recursos ao meu html e fica na parte head por ser uma informação para o navegador</h5></p>
+<!--Diretórios são outro nome para pastas em sistemas de arquivos.
+O caminho que leva a um arquivo ou recurso pode usar símbolos especiais:
+./ significa o diretório atual (a mesma pasta onde você está).
+../ significa voltar uma pasta (o diretório pai).
+../../ significa voltar duas pastas (e assim por diante).
+
+Para criar tabelas no nosso html usamos as tags:
+<table> cria a tabela
+    <tr> define uma linha
+        <th> define o cabeçalho (texto fica em negrito e centralizado)
+            <td> define uma célula comum da tabela
+                essas são as principais-->
+                <table>
+<tr>
+    <th>Produto</th>
+    <th>Preço</th>
+    <th>Descrição</th>
+    <th>Fornecedor</th>
+    </tr>
+    <tr><td>Iphone 17</td>
+        <td>R$12.500,00</td>
+        <td>Iphone top que todo mundo quer</td>
+        <td>Apple</td>
+</tr>
+<tr>
+    <td>Garrafa</td>
+    <td>R$200,00</td>
+    <td>Garrafa térmica de alumínio</td>
+    <td>Stanley</td>
+</tr>
+<tr>
+    <td>Celta</td>
+    <td>R$14.000,00</td>
+    <td>Celta bomba cheio de divida</td>
+    <td>Perigo</td>
+</tr>
+             </table>
+
+             <h2>Documentação: Estilos da Tabela e da Página</h2>
+<p>Esta página foi criada para estudar a personalização de tabelas e elementos visuais com CSS.</p>
+
+<h3>1. Imagem do topo</h3>
+<p>A imagem foi centralizada com <code>display: block</code> e <code>margin: auto</code>, e ajustada para parecer um banner com <code>object-fit: cover</code> e <code>height: 250px</code>.</p>
+
+<h3>2. Paleta de cores</h3>
+<ul>
+  <li><strong>Vinho escuro:</strong> #5c0b17 (usado no cabeçalho da tabela e título)</li>
+  <li><strong>Vinho mais escuro:</strong> #7a1624 (usado na coluna de horários)</li>
+  <li><strong>Creme claro:</strong> #fdf5e6 (usado nas linhas alternadas da tabela)</li>
+  <li><strong>Branco:</strong> #ffffff (usado no fundo das células)</li>
+</ul>
+
+<h3>3. Tabela</h3>
+<p>A tabela usa <code>border-collapse</code> para unir as bordas, <code>border-radius</code> e <code>box-shadow</code> para visual moderno. Linhas pares têm cor creme e a coluna de horários se destaca com o fundo vinho.</p>
+
+<h3>4. Horários</h3>
+<p>Os horários são empilhados verticalmente com <code>display: flex</code> e <code>flex-direction: column</code>, criando uma visualização mais limpa e centralizada.</p>
+
+
+
+    </body>
+</html>
