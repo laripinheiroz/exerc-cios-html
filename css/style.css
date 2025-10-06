@@ -1,0 +1,398 @@
+/* css/style.css */
+/* === IMAGEM DO TOPO === */
+.imagem-topo {
+  display: block;             /* deixa a imagem em "bloco", permitindo centralizar */
+  margin: 20px auto;          /* centraliza horizontalmente e adiciona espaço em cima/baixo */
+  width: 80%;                 /* define a largura da imagem (ajuste entre 70% e 100%) */
+  max-width: 900px;           /* impede que fique grande demais em telas grandes */
+  border-radius: 15px;        /* arredonda os cantos da imagem */
+  box-shadow: 0 0 15px rgba(0,0,0,0.3); /* adiciona sombra suave */
+  object-fit: cover;          /* ajusta o enquadramento da imagem */
+  height: 250px;              /* define altura fixa, pra parecer um banner */
+}
+
+/* === TÍTULO (H1) === */
+header h1 {
+  text-align: center;         /* centraliza o texto */
+  font-family: 'Segoe UI', Arial, sans-serif; /* define fonte moderna */
+  font-size: 2.2rem;          /* aumenta o tamanho */
+  color: #420911;             /* cor vinho */
+  margin-top: 10px;           /* espaço entre a imagem e o título */
+}
+
+/* === TABELA PRINCIPAL === */
+.tabela-horario {
+  width: 90%;                 /* largura geral da tabela */
+  max-width: 1000px;          /* limite máximo de largura */
+  margin: 40px auto;          /* centraliza a tabela e dá espaço vertical */
+  border-collapse: collapse;  /* remove espaçamento duplo entre células */
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;         /* centraliza o texto dentro das células */
+  border-radius: 10px;        /* arredonda cantos da borda da tabela */
+  overflow: hidden;           /* impede que cantos arredondados "estourem" */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); /* sombra leve ao redor */
+}
+
+/* === CABEÇALHO DA TABELA === */
+.tabela-horario thead th {
+  background-color: #5c0b17;  /* fundo vinho */
+  color: #fff;                /* texto branco */
+  font-weight: 600;           /* texto mais forte */
+  padding: 12px;              /* espaço interno */
+  text-transform: uppercase;  /* tudo em maiúsculas */
+  letter-spacing: 0.5px;      /* espaçamento leve entre letras */
+}
+
+/* === CÉLULAS GERAIS === */
+.tabela-horario td {
+  border: 1px solid #e1cbb0;  /* borda em tom creme */
+  padding: 12px;
+  background-color: #ffffff;  /* fundo branco */
+}
+
+/* === LINHAS ALTERNADAS (efeito zebrado) === */
+.tabela-horario tbody tr:nth-child(even) {
+  background-color: #fdf5e6;  /* creme clarinho */
+}
+
+/* === LINHA AO PASSAR O MOUSE === */
+.tabela-horario tbody tr:hover {
+  background-color: #f7e7d2;  /* tom um pouco mais escuro que o creme */
+}
+
+/* === COLUNA DE HORÁRIOS === */
+.tabela-horario td:first-child,
+.tabela-horario th:first-child {
+  background-color: #7a1624;  /* vinho mais escuro pra destaque */
+  color: #fff;                /* texto branco */
+  font-weight: 600;
+  width: 120px;
+}
+
+/* === FORMATAÇÃO DO HORÁRIO (duas linhas) === */
+.hora {
+  display: flex;              /* empilha os horários */
+  flex-direction: column;     /* coloca um em cima do outro */
+  align-items: center;        /* centraliza verticalmente */
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* ====== MENU DE NAVEGAÇÃO ====== */
+header {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #f3f3f3;
+}
+
+h1 {
+  color: #d63384; /* cor rosada elegante */
+  font-family: "Poppins", sans-serif;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #d63384; /* muda a cor ao passar o mouse */
+}
+
+/* 1️⃣ Estrutura principal do artigo */
+.noticia-principal {
+  width: 80%;               /* Mantém o artigo centralizado e com largura agradável */
+  margin: 40px auto;        /* Centraliza o bloco na tela */
+  font-family: 'Georgia', serif; /* Tipografia com “cara de revista” */
+  color: #3b0a0a;           /* Tom vinho escuro para o texto */
+  background-color: #f7f2ec; /* Creme clarinho como fundo (paleta vinho + creme) */
+  padding: 20px;            /* Dá respiro interno pro conteúdo */
+  border-radius: 10px;      /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+/* 2️⃣ Cabeçalho do artigo (título + imagem) */
+.cabecalho-noticia {
+  display: flex;             /* Coloca título e imagem lado a lado */
+  align-items: center;       /* Centraliza verticalmente */
+  justify-content: space-between; /* Empurra o título pra esquerda e a imagem pra direita */
+  gap: 20px;                 /* Espaçamento entre eles */
+  margin-bottom: 20px;       /* Espaço abaixo do cabeçalho */
+}
+
+/* 3️⃣ Título da notícia */
+.cabecalho-noticia h1 {
+  flex: 1;                   /* Faz o título ocupar o espaço que sobra */
+  font-size: 1.6em;          /* Tamanho confortável pra leitura */
+  line-height: 1.4;          /* Espaço entre linhas */
+  color: #4e0f0f;            /* Vinho levemente mais claro */
+}
+
+/* 4️⃣ Imagem da notícia */
+.foto-noticia {
+  width: 40%;                /* Controla a largura pra não dominar o layout */
+  height: auto;              /* Mantém proporção original */
+  border-radius: 10px;       /* Arredonda os cantos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+
+/* 5️⃣ Texto da notícia */
+.texto-noticia {
+  font-size: 1.1em;
+  color: #4e1b1b;            /* Tom vinho médio */
+  margin-bottom: 15px;
+  text-align: justify;       /* Deixa o texto alinhadinho nas margens */
+}
+
+/* 6️⃣ Link "Ler mais" */
+.link-leia-mais {
+  text-decoration: none;     /* Remove o sublinhado */
+  color: #8b0000;            /* Vinho escuro */
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.link-leia-mais:hover {
+  color: #b02a2a;            /* Fica mais claro ao passar o mouse */
+}
+
+/* ===== SEMANA DE MODA EM PARIS ===== */
+.semana-paris {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.semana-paris h2 {
+  color: #4e1b1b;            /* Tom vinho médio */
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #f1f1f1;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.marcas {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* permite quebrar linha em telas pequenas */
+  align-items: stretch;
+}
+
+.marca {
+  flex: 0 0 180px;
+  box-sizing: border-box;
+  width: 180px;
+  text-align: center;
+}
+
+.marca img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s;
+}
+
+.marca img:hover {
+  transform: scale(1.08); /* faz crescer suavemente quando passa o mouse */
+}
+
+.marca p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+footer {
+background-color: #f8f8f8;
+text-align: center;
+padding: 15px 0;
+color: #555;
+font-size: 14px;
+border-top: 1px solid #eee;
+margin-top: 40px;
+}
+
+/* ===== Estilos do exercício 1 (biografia) ===== */
+/* Fonte bonita do Google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Caixa principal */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #b30059;
+    margin-bottom: 20px;
+}
+
+/* Imagem */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    width: 250px;
+}
+
+/* Legenda da imagem */
+figcaption {
+    text-align: center;
+    margin-top: 8px;
+    font-style: italic;
+    color: #555555;
+}
+
+/* Parágrafo */
+p {
+    text-align: justify;
+    margin: 20px 0;
+}
+
+/* Link */
+a {
+    color: #b30059;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #b30059;
+}
+
+/* ===== Estilos do exercício 2 - Receita de Tiramisù ===== */
+.receita-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Imagem do topo */
+.receita-container figure {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.receita-container img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+
+.receita-container figcaption {
+    margin-top: 8px;
+    color: #555;
+    font-style: italic;
+}
+
+/* Título */
+.receita-container h1 {
+    text-align: center;
+    color: #5b0c0c;
+}
+
+/* Lista de passos */
+.receita-container ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* Link */
+.receita-container a {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    color: #5b0c0c;
+    text-decoration: none;
+}
+.receita-container a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.receita-container footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #777;
+    font-size: 0.9em;
+}
+
+/* ===== Estilos do exercício 3 - Atividades ===== */
+.atividades {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Título */
+.atividades h2 {
+    text-align: center;
+    color: #5c0b17;
+    margin-bottom: 20px;
+}
+
+/* Lista */
+.atividades ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Frase final */
+.frase-final {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #5c0b17;
+    font-style: italic;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+
+
