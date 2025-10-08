@@ -395,4 +395,105 @@ body {
   background-color: #f9f9f9;
 }
 
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+/* FUNDO SUAVE */
+body {
+  font-family: "Quicksand", sans-serif;
+  background: linear-gradient(135deg, #fff0f5, #fde2d2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CONTAINER */
+.form-container {
+  background-color: #fffaf8;
+  padding: 40px;
+  width: 380px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+/* TÍTULO E TEXTO */
+.form-container h1 {
+  color: #d28b8b;
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.form-container p {
+  text-align: center;
+  color: #b57d7d;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* CAMPOS */
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: #8c6b6b;
+  margin-bottom: 6px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #f5d0d0;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* EFEITO AO FOCAR */
+input:focus, textarea:focus {
+  border-color: #e5a3a3;
+  box-shadow: 0 0 8px rgba(229, 163, 163, 0.4);
+  outline: none;
+}
+
+/* BOTÃO */
+button {
+  width: 100%;
+  background-color: #e5a3a3;
+  color: #fff;
+  border: none;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* EFEITO NO BOTÃO */
+button:hover {
+  background-color: #d28b8b;
+  transform: scale(1.05);
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
