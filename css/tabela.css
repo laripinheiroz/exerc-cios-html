@@ -1,0 +1,117 @@
+
+.imagem-topo {
+  display: block;             
+  margin: 20px auto;          
+  width: 80%;                 
+  max-width: 900px;           
+  border-radius: 15px;        
+  box-shadow: 0 0 15px rgba(0,0,0,0.3); 
+  object-fit: cover;          
+  height: 250px;              
+}
+
+
+header h1 {
+  text-align: center;         
+  font-family: 'Segoe UI', Arial, sans-serif; 
+  font-size: 2.2rem;          
+  color: #5c0b17;             
+  margin-top: 10px;         
+}
+
+
+.tabela-horario {
+  width: 90%;                 
+  max-width: 1000px;          
+  margin: 40px auto;          
+  border-collapse: collapse;  
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-align: center;         
+  border-radius: 10px;        
+  overflow: hidden;          
+  box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+
+
+.tabela-horario thead th {
+  background-color: #5c0b17;  
+  color: #fff;                
+  font-weight: 600;           
+  padding: 12px;             
+  text-transform: uppercase;  
+  letter-spacing: 0.5px;      
+}
+
+
+.tabela-horario td {
+  border: 1px solid #e1cbb0;  
+  padding: 12px;
+  background-color: #ffffff;  
+}
+
+
+.tabela-horario tbody tr:nth-child(even) {
+  background-color: #fdf5e6;  
+}
+
+
+.tabela-horario tbody tr:hover {
+  background-color: #faead5;  
+}
+
+
+.tabela-horario td:first-child,
+.tabela-horario th:first-child {
+  background-color: #7a1624;  
+  color: #fff;                
+  font-weight: 600;
+  width: 120px;
+}
+
+
+.hora {
+  display: flex;              
+  flex-direction: column;     
+  align-items: center;        
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+
+.atividades {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
+.atividades h2 {
+    text-align: center;
+    color: #7a1624;
+    margin-bottom: 20px;
+}
+
+
+.atividades ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Frase final */
+.frase-final {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #7a1624;
+    font-style: italic;
+}
+
+body {
+  background-color: #f9f9f9;
+}
+

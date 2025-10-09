@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+  --creme: #fff8f0;
+  --marrom-claro: #c4a484;
+  --marrom: #8b5e3c;
+  --marrom-escuro: #5c3b24;
+  --branco: #ffffff;
+  --cinza: #555;
+  --sombra: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--creme), #fdf3e7);
+  color: var(--marrom-escuro);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+.form-section {
+  background: var(--branco);
+  width: 100%;
+  max-width: 600px;
+  padding: 35px 45px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px var(--sombra);
+  border-top: 6px solid var(--marrom);
+}
+
+h1 {
+  text-align: center;
+  color: var(--marrom);
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+fieldset {
+  border: 2px solid var(--marrom-claro);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: 600;
+  color: var(--marrom);
+  padding: 0 8px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: var(--marrom-escuro);
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid #e8dccd;
+  border-radius: 8px;
+  background-color: #fdf8f3;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--marrom-escuro);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus {
+  border-color: var(--marrom-claro);
+  background-color: var(--branco);
+  outline: none;
+}
+
+.sexo-field {
+  border: none;
+  padding: 10px 0;
+}
+
+.sexo-field legend {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.sexo-field label {
+  display: inline-block;
+  margin-right: 15px;
+  font-weight: normal;
+  color: var(--marrom);
+}
+
+.termos {
+  text-align: left;
+  font-size: 0.9rem;
+  color: var(--marrom-escuro);
+}
+
+.termos input {
+  margin-right: 8px;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px 20px;
+  background-color: var(--marrom);
+  color: var(--branco);
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+.btn:hover {
+  background-color: var(--marrom-escuro);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .form-section {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}

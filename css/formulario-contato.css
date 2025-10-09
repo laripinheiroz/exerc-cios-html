@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+  --turquesa: #73c7c7;        
+  --turquesa-escuro: #2b8c8c; 
+  --creme: #fffaf3;           
+  --branco: #ffffff;
+  --cinza-claro: #f2f7f7;
+  --texto: #2b2b2b;
+  --sombra: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, var(--creme) 50%, #e8fffd 100%);
+  color: var(--texto);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.form-container {
+  background-color: var(--branco);
+  width: 100%;
+  max-width: 450px;
+  padding: 35px 40px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px var(--sombra);
+  text-align: center;
+  border-top: 6px solid var(--turquesa);
+}
+
+.form-container h1 {
+  color: var(--turquesa-escuro);
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.form-container p {
+  color: #666;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+
+.input-group {
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  color: var(--turquesa-escuro);
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid var(--cinza-claro);
+  border-radius: 8px;
+  background-color: var(--cinza-claro);
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--texto);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--turquesa);
+  background-color: #ffffff;
+  outline: none;
+}
+
+button {
+  background-color: var(--turquesa);
+  color: var(--branco);
+  border: none;
+  padding: 12px 18px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.15s;
+}
+
+button:hover {
+  background-color: var(--turquesa-escuro);
+  transform: translateY(-2px);
+}
+
+
+@media (max-width: 500px) {
+  .form-container {
+    padding: 28px 24px;
+  }
+  .form-container h1 {
+    font-size: 1.5rem;
+  }
+}

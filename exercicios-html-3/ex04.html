@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulário de Pedido</title>
+  <link rel="stylesheet" href="../css/formulario-restaurante.css">
+</head>
+
+<body>
+  <main>
+    <section class="form-section2">
+      <h1>Restaurante The Velvet Lounge</h1>
+      <p class="subtitulo">Faça seu pedido</p>
+
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Dados do Cliente</legend>
+          <div class="form-group2">
+            <label for="nome">Nome do cliente</label>
+            <input 
+              type="text" 
+              id="nome" 
+              name="nome" 
+              placeholder="Digite seu nome completo" 
+              required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Escolha do Prato</legend>
+          <div class="form-group2">
+            <label for="prato">Prato principal</label>
+            <select id="prato" name="prato" required>
+              <option value="">Selecione um prato</option>
+              <option value="risoto_tartufo">Risoto de Funghi com Tartufo</option>
+              <option value="file_mignon">Filé Mignon ao Molho de Vinho</option>
+              <option value="salmao_grelhado">Salmão Grelhado com Legumes</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Observações</legend>
+          <div class="form-group2">
+            <label for="observacao">Deseja adicionar algum detalhe ao pedido?</label>
+            <textarea 
+              id="observacao" 
+              name="observacao" 
+              rows="4" 
+              placeholder="Ex: sem cebola, ponto da carne, ou observações especiais..."></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn">Enviar Pedido</button>
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>

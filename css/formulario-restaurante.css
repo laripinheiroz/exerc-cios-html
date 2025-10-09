@@ -1,0 +1,148 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f8f4ed, #efe8dc);
+  color: #3b1f2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+main {
+  width: 100%;
+  max-width: 500px;
+  background-color: #fffdf9;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(91, 45, 59, 0.15);
+  border: 1px solid #d8cbb8;
+}
+
+
+h1 {
+  text-align: center;
+  color: #5b1d2d;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #856c5c;
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  font-style: italic;
+}
+
+
+fieldset {
+  border: 1px solid #e1d6c6;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 20px;
+  background-color: #fffaf3;
+}
+
+legend {
+  color: #5b1d2d;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0 6px;
+}
+
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9rem;
+  color: #4a2a38;
+}
+
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8cbb8;
+  border-radius: 8px;
+  background-color: #fffefb;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #7b2f51;
+  box-shadow: 0 0 6px rgba(123, 47, 81, 0.25);
+  outline: none;
+}
+
+
+.checkbox-group label {
+  display: block;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #7b2f51;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn:hover {
+  background-color: #61203e;
+  transform: scale(1.02);
+}
+
+@media (max-width: 480px) {
+  main {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #d8cbb8;
+  border-radius: 8px;
+  background-color: #fffefb;
+  font-size: 0.95rem;
+  resize: vertical; 
+  font-family: "Poppins", sans-serif;
+  transition: all 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #7b2f51;
+  box-shadow: 0 0 6px rgba(123, 47, 81, 0.25);
+  outline: none;
+}
